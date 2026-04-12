@@ -1,0 +1,37 @@
+using recursion print 1 to 5
+def num(n):
+    if n==6:
+        return
+    print(n)
+    num(n+1)
+    
+num(1)
+
+using recursion print 5 to 1
+def num(n):
+    if n==0:
+        return
+    print(n)
+    num(n-1)
+    
+num(5)
+
+
+using recursion sum of n
+def sum(n,s=0):
+    if n==o:
+        return s
+    s=s+n
+    return (n-1,s)
+n=5
+print(sum(n))
+
+
+using recursion n no of factorial
+def sum(n,s=1):
+    if n==0:
+        return s
+    s=s*n
+    return sum(n-1,s)
+n=5
+print(sum(n))   
