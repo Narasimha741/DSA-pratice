@@ -1,0 +1,13 @@
+#perfect square or not
+
+s=int(input("eneter number:"))
+sr=int(s**0.5)
+if sr*sr==s:
+    print("perfect square:",s)
+else:
+    print("not a perfect square")  
+
+    
+
+
+    
