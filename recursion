@@ -27,7 +27,7 @@ n=5
 print(sum(n))
 
 
-using recursion n no of factorial
+using recursion  factorial of n
 def sum(n,s=1):
     if n==0:
         return s
