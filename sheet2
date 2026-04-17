@@ -7,7 +7,33 @@ if sr*sr==s:
 else:
     print("not a perfect square")  
 
-    
+#Question: Calculate how many cars are needed for a given number of people. 
+Explanation: Divide total people by 5 and round up using ceiling logic. - Input: Members = 17 -
+Output: Cars needed = 4    
+member=17
+car=member//5
+if member%5!=0:
+    car=car+1
+    print(car)
 
 
-    
+#14. Second Biggest Among Three Numbers
+#Question: Find the second largest number among three inputs. Explanation: Use sorting or nested 
+conditions to find the second largest value. - Input: A = 10, B = 25, C = 18 - Output: Second biggest: 18
+a = 10
+b = 25
+c = 18
+numbers = [a, b, c]
+numbers.sort()
+print("Second biggest:", numbers[1])
+
+#15. Leap Year or Not
+#Question: Check if a given year is a leap year. Explanation: A year is a leap year if it is
+divisible by 4, and (not divisible by 100 unless divisible by 400). - Input: Year = 2024 - 
+Output: Leap year
+
+year=1800
+if year%400==0 or (year%4==0 and year%100!=0):
+    print("leap year")
+else:
+    print("not a leap year")
