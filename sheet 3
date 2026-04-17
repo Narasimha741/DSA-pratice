@@ -7,7 +7,8 @@ for i in range(1,n+1):
     print(i,end=" ")
 
 #Print Numbers from m to n
-#Question: Write a program to print numbers from m to n. Explanation: Loop from m to n and print values. - Input: m = 3, n = 7 - Output: 3 4 5 6 7
+#Question: Write a program to print numbers from m to n. Explanation: Loop from m to n 
+and print values. - Input: m = 3, n = 7 - Output: 3 4 5 6 7
 
 
 m=3
@@ -16,7 +17,75 @@ for i in range(m,n+1):
     print(i)
 
 #Print Numbers from n to 1 in Reverse
-#Question: Write a program to print numbers in reverse from n to 1. Explanation: Use a loop starting from n and decrement to 1. - Input: n = 5 - Output: 5 4 3 2 1
+#Question: Write a program to print numbers in reverse from n to 1. Explanation: Use a 
+loop starting from n and decrement to 1. - Input: n = 5 - Output: 5 4 3 2 1
 n=5
 for i in range(n,0,-1):
     print(i,end=" ")
+
+#Print Numbers from n to m in Reverse
+#Question: Write a program to print numbers from n to m in reverse. Explanation: Start 
+from n and go down to m. - Input: n = 10, m = 6 - Output: 10 9 8 7 6
+n=10
+m=6
+for i in range(n,m-1,-1):
+    print(i)
+
+
+#5. Sum of n Natural Numbers
+#Question: Write a program to calculate the sum of first n natural numbers. Explanation: Use
+formula or loop to sum from 1 to n. - Input: n = 5 - Output: 15
+n=5
+c=0
+for i in range(1,n+1):
+    c=c+i
+print(c)
+
+
+#6. Factorial of a Number
+#Question: Write a program to find the factorial of a number. Explanation: Multiply all numbers from 1 to n. - Input: n = 5 - Output: 120
+n=5
+c=1
+for i in range(1,n+1):
+    c=c*i
+print(c)  
+
+#7. Sum of m to n Numbers
+#Question: Write a program to find the sum of all numbers from m to n. Explanation: Loop from m to n and add values. - Input: m = 3, n = 6 - Output: 18   
+m=3
+n=6
+c=0
+for i in range(m,n+1):
+    c=c+i
+print(c) 
+
+
+#8. Product of m to n Numbers
+#Question: Write a program to find the product of numbers from m to n. Explanation: Loop 
+from m to n and multiply values. - Input: m = 2, n = 4 - Output: 24 
+m=2
+n=4
+c=1
+for i in range(m,n+1):
+    c=c*i
+print(c)  
+
+
+#9.Print Factors of a Number
+#Question: Write a program to print all factors of a given number. Explanation: Check divisibility 
+of number from 1 to n. - Input: n = 6 - Output: 1 2 3 6
+n=6
+for i in range(1,n+1):
+    if n%i==0:
+        print(i)
+
+#10. Count of Factors
+#Question: Write a program to count how many factors a number has. Explanation: Increment 
+count when divisible. - Input: n = 6 - Output: 4
+n=6
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        c=c+1
+print(c)
+
