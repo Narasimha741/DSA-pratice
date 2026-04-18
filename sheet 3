@@ -89,3 +89,78 @@ for i in range(1,n+1):
         c=c+1
 print(c)
 
+
+#11. Prime Number Check
+#Question: Check if a number is prime. Explanation: A number is prime if it has exactly 2 factors. 
+- Input: n = 7 - Output: Prime
+
+n=4
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        c=c+1
+if c==2:
+    print("prime")
+else:
+    print("not prime")
+
+#12. Even Numbers from m to n
+#Question: Print all even numbers between m and n. Explanation: Use loop and check if divisible by 2.
+- Input: m = 3, n = 10 - Output: 4 6 8 10
+
+m=3
+n=10
+for i in range(m,n+1):
+    if i%2==0:
+        print(i,end=" ")
+
+#13. Odd Numbers from m to n
+#Question: Print all odd numbers between m and n. Explanation: Check if number % 2 != 0. - 
+Input: m = 3, n = 10 - Output: 3 5 7 9
+m=3
+n=10
+for i in range(m,n+1):
+    if i%2!=0:
+        print(i)
+
+#14. Count of Even and Odd Numbers
+#Question: Count how many even and odd numbers are in the range m to n. Explanation: 
+Use counters for even and odd. - Input: m = 3, n = 7 - Output: Even = 2, Odd = 3
+m=3
+n=7
+c=0
+d=0
+for i in range(m,n+1):
+    if i%2==0:
+        c=c+1
+    else:
+        d=d+1
+print("odd",d)
+print("even",c)
+
+
+#15. Reverse a String
+#Question: Reverse a given string. Explanation: Use slicing or loop. - Input: “hello” - Output: “olleh”
+n="hello"
+rev=""
+for i in n:
+    rev=i+rev
+print(rev)
+#reverse number
+n=1234
+rev=0
+while n>0:
+    d=n%10
+    rev=rev*10+d
+    n=n//10
+print(rev)  
+
+#17. Sum of Digits
+#Question: Calculate the sum of digits of a number. Explanation: Use loop and % 10 to extract digits.
+- Input: 123 - Output: 6
+n=123
+c=0
+while n>0:
+    d=n%10
+    c=c+d
+print(c) 
