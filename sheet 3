@@ -153,7 +153,22 @@ while n>0:
     d=n%10
     rev=rev*10+d
     n=n//10
-print(rev)  
+print(rev) 
+
+
+#16. Check for Palindrome String
+#Question: Check if a string is a palindrome. Explanation: Compare string with its reverse.
+- Input: “madam” - Output: Palindrome
+
+n="madam"
+m=""
+for i in n:
+    m=i+m
+print(m)
+if n==m:
+    print("palindrome")
+else:
+    print("not p___")
 
 #17. Sum of Digits
 #Question: Calculate the sum of digits of a number. Explanation: Use loop and % 10 to extract digits.
@@ -164,3 +179,142 @@ while n>0:
     d=n%10
     c=c+d
 print(c) 
+
+#19. Armstrong Number Check
+#Question: Check if a number is an Armstrong number. Explanation: Sum of cube of digits equals the number.
+- Input: 153 - Output: Armstrong number
+n=153
+c=0
+while n>0:
+    d=n%10
+    d=d**3
+    c=c+d
+    n=n//10
+print(c)
+
+#20. Reverse a Number
+#Question: Reverse the digits of a number. Explanation: Use loop with % and // to reverse. - Input: 123 - Output: 321
+n=123
+rev=0
+while n>0:
+    d=n%10
+    rev=rev*10+d
+    n=n//10
+print(rev)
+
+
+#21. Palindrome Number Check
+#Question: Check if a number is a palindrome. Explanation: Compare number with its reverse. 
+- Input: 121 - Output: Palindrome
+n=12321
+rev=0
+m=n
+while n>0:
+    d=n%10
+    rev=rev*10+d
+    n=n//10
+if m==rev:
+    print("palindrome")
+else:
+    print("not palindrome")
+
+
+#22. Count Vowels in String
+#Question: Count number of vowels in a string. Explanation: Loop and check for a, e, i, o, u. - 
+Input: “apple” - Output: 2
+
+
+n="apple"
+m="aeiouAEIOU"
+c=0
+for i in n:
+    if i in m:
+        c=c+1
+print(c)
+
+#23. Count Consonants in String
+#Question: Count consonants in a string. Explanation: Check for alphabetic characters not vowels. 
+- Input: “apple” - Output: 3
+
+n="apple"
+c=0
+for i in n:
+    if i not in "aeiouAEIOU":
+        c=c+1
+print(c) 
+
+#24. Count Vowels and Consonants
+#Question: Count vowels and consonants in input string. Explanation: Maintain two counters. - Input: “apple” - Output: Vowels = 2, Consonants = 3
+
+n="apple"
+c=0
+d=0
+for i in n:
+    if i in "aeiouAEIOU":
+        c=c+1
+    else:
+        d=d+1
+print(c)
+print(d)
+
+
+#25. Perfect Number Check
+#Question: Check if a number is perfect. Explanation: Sum of proper divisors equals the number. -
+Input: 28 - Output: Perfect number
+n=28
+c=0
+for i in range(1,n+1):
+    if i%n==0:
+        c=c+i
+if c==n:
+    print("perfect number")#factor of 28 sum each digit
+else:
+    print("not perfect number")
+
+#26. Neon Number Check
+#Question: Check if a number is a neon number. Explanation: Square the number, sum digits, match original.
+- Input: 9 - Output: Neon number
+n=9
+m=n**2
+c=0
+while m>0:
+    d=m%10
+    c=c+d
+    m=m//10
+if c==n:    
+    print("neon")  
+else:
+    print("not neon")
+
+#27. Strong Number Check
+#Question: Check if a number is a strong number. Explanation: Sum of factorial of digits equals the number.
+- Input: 145 - Output: Strong number
+n=145
+m=n
+sum=0
+while n>0:
+    d=n%10
+    c=1
+    for i in range(1,d+1):
+        c=c*i
+    sum=sum+c
+    n=n//10
+if sum==m:
+    print("strong number")
+else:
+    print("not a strongnumber")
+
+#28. Harshad Number Check
+#Question: Check if a number is divisible by the sum of its digits. Explanation:
+Calculate digit sum and check divisibility. - Input: 18 - Output: Harshad number
+n=18
+m=n
+c=0
+while n>0:
+    d=n%10
+    c=c+d
+    n=n//10
+if m%c==0:     
+    print("harsad number")
+else:
+    print("not harasad number")
