@@ -104,6 +104,18 @@ if c==2:
 else:
     print("not prime")
 
+
+#print 1 to n prime numbers
+
+n=10
+for num in range(1,n+1):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            print(num)
+
 #12. Even Numbers from m to n
 #Question: Print all even numbers between m and n. Explanation: Use loop and check if divisible by 2.
 - Input: m = 3, n = 10 - Output: 4 6 8 10
