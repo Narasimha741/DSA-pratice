@@ -318,3 +318,21 @@ if m%c==0:
     print("harsad number")
 else:
     print("not harasad number")
+
+#30. Check for Neon Number (Repeated)
+#Question: Again, check for a neon number (example). Explanation: Square number and sum digits. -
+Input: 9 - Output: Neon number
+
+
+n=9
+m=n**2
+d=0
+while m>0:
+    c=m%10
+    d=d+c
+    m=m//10
+if d==n:
+    print("neon number")
+else:
+    print("not a number")
+    
