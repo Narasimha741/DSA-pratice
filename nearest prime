@@ -1,0 +1,24 @@
+def check_prime(x):
+    if x<2:
+        return "not a prime"
+    c=0
+    for i in range(1,x+1):
+        if x%i==0:
+            c=c+1
+    if c==2:
+        return "prime"
+    else:
+        return "not a prime"
+        
+x=11
+l=x-1
+r=x+1
+while True:
+    if check_prime(l)=="prime":
+        print(l)
+        break
+    if check_prime(r)=="prime":
+        print(r)
+        break
+    l=l-1
+    r=r+1
