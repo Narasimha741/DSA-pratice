@@ -1,0 +1,127 @@
+# #sum of number
+# n=int(input("enter num:"))
+# c=0
+# while n>0:
+#     s=n%10
+#     c=c+s
+#     n=n//10
+# print(c)    
+
+# Reverse number
+# n=int(input("enter num:"))
+# rev=0
+# while n>0:
+#     s=n%10
+#     rev=rev*10+s
+#     n=n//10
+# print(rev)    
+
+# factorial of number
+# n=int(input("enter num:"))
+# m=1
+# for i in range(1,n+1):
+#     m=m*i
+# print(m) 
+
+# mid value of string or number mid value
+# n=input("eneter string")
+# mid=len(n)//2
+# if len(n)%2==0:
+#     print(n[mid-1]+n[mid])
+# else:
+#     print(n[mid])
+
+# Write a program to check whether the sum of digits in the number except  
+# first digit and digit is equal to the sum of first digit and last digit of that  number. If both the sums are equal then print equal otherwise print not  equal  
+# Testcase1 : 75547  
+# Output : equal  
+
+# n=input("enter number:")
+# f=int(n[0])
+# l=int(n[-1])
+# mid=0
+# for i in range(1,len(n)-1):
+#     mid=mid+int(n[i])
+
+# sum=f+l
+# if sum==mid:
+#     print("equal")
+# else:
+#     print("nt equal")
+
+
+# Write a program to check whether the digits in-between the first and last  
+# digit are less than first and last digit, if yes then print true, otherwise print  false.  
+# Testcase1 : 1672  
+# Output : false
+    
+# n=input("enter number:")   
+# f=int(n[0])
+# l=int(n[-1])
+# flag=True
+# for i in range(1,len(n)-1):
+#     d=int(n[i])
+#     if d>=f and d>=l:
+#         flag=False
+#         break
+# if flag:
+#     print("true")
+# else:
+#     print("false")
+  
+  
+# Write a program to print the vowels in the given string in reverse order.  
+# Testcase1 : Helloworld  
+# Output : ooe  
+# Explanation : Vowels in the given string Helloworld are e,o,o . The  reverse order of eoo is ooe. 
+       
+# s=input("enter strng:")
+# v="aeiouAEIOU"
+# for i in range(len(s)):
+#     if s[i] in v:
+#         print(s[i],end=" ")
+
+# Write a program to print the string after removing the duplicate characters  in the string.  
+# Testcase1 : madam  
+# Output : d  
+
+# s=input("enter string: ")
+# res=" "
+# for i in s:
+#     if s.count(i)==1:
+#         res=res+i
+# print(res)   
+
+# Write a program to convert all the upper case letters in the given string to  lower case letter and vice versa.  
+# Testcase1 : JohnWick  
+# Output : jOHNwICK  
+
+# s=input("enter string: ")
+# result=""
+# for ch in s:
+#     if ch.isupper():
+#         result+=ch.lower()
+#     elif ch.islower():
+#         result+=ch.upper()
+#     else:
+#         result+=ch
+# print(result)        
+
+
+# Write a program to print all the Upper case letters in the string in reverse  order and then followed by the lower case letters .  
+# Testcase1 : NumberOne  
+# Output : ONumberne
+
+# s=input("enter string: ")
+# rev=""
+# r=""
+# for i in s:
+#     if i.isupper():
+#         rev=i+rev
+#     else:
+#         r=r+i
+# rev=rev+r
+# print(rev)
+
+
+       
