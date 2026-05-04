@@ -123,5 +123,92 @@
 # rev=rev+r
 # print(rev)
 
+# Find the Largest Element in an Array 
+# Problem: Write a function to return the largest number in an array. 
+# Testcase 1: 
+# Input: [3, 1, 4, 1, 5, 9] 
+# Output: 9 
+# def check(n):
+#     large=n[0]
+#     for i in range(len(n)):
+#         if n[i]>large:
+#             large=n[i]
+#     return large        
+# n=list(map(int,input("enter list:").split()))    
+# print(check(n))
 
+
+# Find the Second Largest Element 
+# Problem: Write a function to return the second largest number in an array. 
+# Testcase 1: 
+# Input: [3, 1, 4, 1, 5, 9] 
+# Output: 5 
+# Explanation: 
+# In the array [3, 1, 4, 1, 5, 9], the second largest number after 9 is 5. 
+
+# def check(n):
+#     if len(n)<2:
+#         return "no second largest value"
+#     first=second=n[0]
+#     for num in n:
+#         if num>first:
+#             second=first
+#             first=num
+#         elif num!=first:
+#             if first==second or num>second:
+#                 second=num
+#     if first==second:
+#         return "No second largest value"
+#     return second   
+        
+# n=list(map(int,input("enter list: ").split()))    
+# print(check(n))    
+
+
+#  Sum of All Elements 
+# Problem: Write a function that returns the sum of all elements in an array. 
+# Testcase 1: 
+# Input: [1, 2, 3, 4] 
+# Output: 10
+
+# def sum(n):
+#     s=0
+#     for i in n:
+#         s+=i
+#     return s    
+    
+# n=list(map(int,input("enter string:").split()))
+# print(sum(n))
+
+
+#  Remove Duplicates from an Array 
+# Problem: Write a function to remove duplicate values from an array. 
+# Testcase 1: 
+# Input: [1, 2, 2, 3, 4, 4, 5] 
+# Output: [1, 2, 3, 4, 5] 
+
+# def dup(n):
+#     out=[]
+#     for i in n:
+#         if i not in out:
+#             out.append(i)
+            
+#     return out        
+            
+# n=list(map(int,input("enter string:").split()))
+# print(dup(n))
+
+# Problem: Write a function to check if an array is sorted in ascending  order.  
+# Testcase 1: 
+# Input: [1, 2, 3, 4, 5] 
+# Output: true 
+
+# def check(n):
+#     for i in range(len(n)-1):
+#         if n[i]>n[i+1]:
+#             return False
+#     return True        
+        
+# n=list(map(int,input("enter list: ").split()))
+# print(check(n))
        
