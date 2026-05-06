@@ -62,3 +62,24 @@ for i in range(len(l)):
     if check(l[i]+1):
         print(l[i])
 
+
+#Write a program that takes a number as input, print the sum of duplicate numbers in the given number.
+Testcase1	:  7473183
+Output     	:  10
+
+def check(n):
+  f={}
+  for i in str(n):
+    if i in f:
+        f[i]+=1
+    else:
+        f[i]=1
+          
+  total=0
+  for key in f:
+    if f[key]>1:
+        total+=int(key)
+  return total        
+        
+n=input("enter: ")
+print(check(n))
