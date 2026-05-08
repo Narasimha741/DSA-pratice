@@ -107,3 +107,29 @@ else:
     print("not in list")
 
 
+# Write a program that takes array of numbers are input, print the second duplicate number and it’s occurrence.
+
+# Testcase1	:  [ 64, 1, 2, 7, 79, 7, 7, 1, 22]
+# Output     	:  Second duplicate number is 7 and it is occurred 3 times
+# Explanation	: In the given array [ 64, 1, 2, 7, 79, 7, 7, 1, 22], the second duplicate number is 7 and it is occurred for 3 times.
+
+
+def check(n):
+    f={}
+    for i in n:
+        if i in f:
+            f[i]+=1
+        else:
+            f[i]=1
+    d=[]
+    for j in f:
+        if f[j]>1:
+            d.append(j)
+    if len(d)>=2:
+        second=d[1]
+        print("second duplicate number is ",second,f[second])
+    else:
+        print("no second duplicate")
+        
+l=list(map(int,input("enter number: ").split()))
+print(check(l))
