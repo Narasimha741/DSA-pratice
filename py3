@@ -76,10 +76,34 @@ def check(n):
         f[i]=1
           
   total=0
-  for key in f:
-    if f[key]>1:
-        total+=int(key)
+  for j in f:
+    if f[j]>1:
+        total+=int(j)
   return total        
         
 n=input("enter: ")
 print(check(n))
+
+Write a program that takes array of numbers as input and a number as second input.
+Check the position of the factorial of the second input number in the given array.
+Print the position of it. If the factorial of given second input number is not presented in the array
+then print factorial of  the number is not presented.
+
+Testcase1	:  [ 61, 4, 6, 7, 120 , 10 ]
+Input :  5
+Output     	: 4
+
+def fact(n):
+    m=1
+    for i in range(1,n+1):
+        m=m*i
+    return m   
+l=list(map(int,input("enter list: ").split()))
+n=int(input("enter number: "))
+f=fact(n)
+if f in l:
+    print(l.index(f))
+else:
+    print("not in list")
+
+
