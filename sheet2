@@ -1,4 +1,51 @@
-#perfect square or not
+base=int(input("enter: "))
+height=int(input("enter: ")
+area=1/2*base*height
+print("area of triangle: ",area)
+
+side=int(input("enter side: "))
+perimeter=4*side
+print(perimeter)
+
+side=int(input("enter side: "))
+area=side*side
+print(area)
+
+l=int(input("enter side: "))
+b=int(input("enter: "))
+area=l*b
+print(area)
+
+length=int(input("eneter: "))
+breadth=int(input("enter: "))
+area=2*(length+breadth)
+print("area of rect:",area)
+
+amount=int(input("enter: "))
+a=amount//1000
+b=amount-(a*1000)
+c=b//500
+d=b-(c*500)
+print("1000's",a)
+print("500's",c)
+print("remaining",d)
+
+sec=int(input("enter sec: "))
+hours=sec//3600
+a=sec-(hours*3600)
+mins=a//60
+secs=a-(mins*60)
+print("hours: ",hours)
+print("mins: ",mins)
+print("secs: ",secs)
+
+maths=int(input("enter: "))
+phy=int(input("enter: "))
+chy=int(input("enter: "))
+total=maths+phy+chy
+avg=total/3
+print("Toatal: ",total)
+print("Avg: ",avg)#perfect square or not
 
 s=int(input("eneter number:"))
 sr=int(s**0.5)
