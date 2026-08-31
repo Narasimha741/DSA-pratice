@@ -95,3 +95,138 @@ else:
     print("not a prime")     
 
 
+num=int(input("enter num: "))
+if num%2==0:
+    print("even")
+else:
+    print("odd")
+
+
+num= int(input("enter: "))
+if num%5==0 and num%10!=0:
+    print("satisfy ")
+else:
+    print("not satisfy")
+
+
+num1=int(input("enter: "))
+num2=int(input("enetr: "))
+
+if num1>num2:
+    print("num1 is big")
+else:
+    print("num2 is big")
+
+
+num1=int(input("enter: "))
+num2=int(input("enetr: "))
+
+if num1<num2:
+    print("num1 is small")
+else:
+    print("num2 is small")
+
+
+num=int(input("eneter: "))
+if num%2==0 and num%3==0 and num%6==0:
+    print("satisfy")
+else:
+    print("not satisfy")
+
+
+age=int(input('enetr number: '))
+if age >=18:
+    print("eligible for vote")
+else:
+    print("not eligible")
+
+
+maths=int(input("enter; "))
+phy=int(input("enter: "))
+chy=int(input("eneter: "))
+if maths>=35 and phy>=35 and chy>=35:
+    print("pass")
+else:
+    print("fail")
+
+
+maths=int(input("enter; "))
+phy=int(input("enter: "))
+chy=int(input("eneter: "))
+if maths>=35 or phy>=35 or chy>=35:
+    print("pass")
+else:
+    print("fail")
+
+
+maths=int(input("enter; "))
+phy=int(input("enter: "))
+chy=int(input("eneter: "))
+if maths>=35 and phy>=35 or chy>=35:
+    print("pass")
+if maths>=35 or phy>=35 and chy>=35:
+    print("pass")
+if maths>=35 and chy>=35 or phy>=35:
+    print("pass")     
+else:
+    print("fail")
+
+
+num1=int(input("enter: "))
+num2=int(input("enter: "))
+num3=int(input("enter: "))
+if num1>num2 and num1>num3:
+    print("num1 is big",num1)
+elif num2>num1 and num2>num3:
+    print("num2 is big",num2)
+else:
+    print("num3 is big",num3)    
+
+
+num=int(input("enter: "))
+sqrt=num**0.5
+if sqrt==int(sqrt):
+    print("perfect square")
+else:
+    print("not perfect square")  
+
+
+mem=int(input("enter: "))
+car=mem//5
+
+if mem%5==0:
+    print(car)
+else:
+    print(car+1)    
+
+num1=int(input("enter: "))
+num2=int(input("enter: "))
+num3=int(input("enter: "))
+
+if num1 >num2 and num1>num3:
+    if num2>num3:
+        print("second largest",num2)
+    else:
+        print("second largest",num3)    
+
+elif num2> num1 and num2>num3:
+    if num1 > num2:
+        print("second largest",num1)
+    else:
+        print("second Largest",num3)  
+
+else:
+    print("second largest",num3)          
+
+
+
+
+
+
+
+
+
+
+
+
+
